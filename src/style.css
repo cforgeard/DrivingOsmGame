@@ -1,0 +1,113 @@
+.my-card {
+  background: #fff;
+  border-radius: 2px;
+  padding: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.padding-12 {
+  padding: 12px;
+}
+
+.left-up {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+.left-down {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+}
+
+.right-up {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+}
+
+.right-down {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.horizontal > * {
+  float: left;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.space-between-elements > * {
+  margin: 12px;
+}
+
+.vehicle-img {
+  background-image: url("car.png");
+  background-size: cover;
+  width: 54px;
+  height: 54px;
+}
+
+.full-screen {
+  height: 100vh !important;
+}
+
+.center-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone-android {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: absolute;
+  left: calc(50% - 190px);
+  right: calc(50% - 190px);
+  border-radius: 30px;
+  width: 380px;
+  padding: 60px 10px;
+  height: calc(100% - 32px);
+  box-shadow: 0 0 0 2px #aaa;
+  background: #111;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.custom-loader {
+  -moz-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}

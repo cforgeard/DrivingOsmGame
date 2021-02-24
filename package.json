@@ -1,0 +1,37 @@
+{
+  "name": "osm-game",
+  "version": "1.0.0",
+  "author": "cforgeard",
+  "license": "MIT",
+  "dependencies": {
+    "@mapbox/tilebelt": "^1.0.2",
+    "@turf/helpers": "^6.3.0",
+    "@turf/transform-translate": "^6.3.0",
+    "axios": "^0.21.1",
+    "axios-retry": "^3.1.9",
+    "bulma": "^0.9.2",
+    "bulma-pageloader": "^0.3.0",
+    "mapbox-gl": "^2.1.1",
+    "sgeo": "^0.0.5",
+    "ste-simple-events": "^2.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode development",
+    "start": "webpack serve --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.1.0",
+    "css-loader": "^5.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^3.4.5",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.23.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
